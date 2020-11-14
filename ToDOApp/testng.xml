@@ -8,5 +8,5 @@
     <classes>
       <class name="application.todotest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
 </suite> <!-- Suite -->
