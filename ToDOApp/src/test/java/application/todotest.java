@@ -68,7 +68,7 @@ public class todotest {
 		}
 
 	@Parameters({"taskName", "status"})
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void createTask(String taskName, String status) {
 
 		jo =new JSONObject();
