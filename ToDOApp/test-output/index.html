@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\achat\eclipse-workspace\ToDOApp\testng.xml</span>
+                    <span>C:\Users\achat\git\repository\ToDoList\ToDOApp\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="application.todotest" class="method navigator-link" hash-for-method="getaSingleTask(28Ct9UGv)">getaSingleTask(28Ct9UGv)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="application.todotest" class="method navigator-link" hash-for-method="createTask(Eat Veg food, true)">createTask(Eat Veg food, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="application.todotest" class="method navigator-link" hash-for-method="getaSingleTask(NLgZ6AKp)">getaSingleTask(NLgZ6AKp)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,10 +137,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getaSingleTask(28Ct9UGv)">
-                  </a> <!-- getaSingleTask(28Ct9UGv) -->
+                  <a name="createTask(Eat Veg food, true)">
+                  </a> <!-- createTask(Eat Veg food, true) -->
+                  <span class="method-name">createTask</span>
+                  <span class="parameters">(Eat Veg food, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getaSingleTask(NLgZ6AKp)">
+                  </a> <!-- getaSingleTask(NLgZ6AKp) -->
                   <span class="method-name">getaSingleTask</span>
-                  <span class="parameters">(28Ct9UGv)</span>
+                  <span class="parameters">(NLgZ6AKp)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -150,7 +163,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\achat\eclipse-workspace\ToDOApp\testng.xml</span>
+            <span class="header-content">C:\Users\achat\git\repository\ToDoList\ToDOApp\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,7 +172,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;taskName&quot; value=&quot;Eat Veg food&quot;/&gt;
-    &lt;parameter name=&quot;taskID&quot; value=&quot;28Ct9UGv&quot;/&gt;
+    &lt;parameter name=&quot;taskID&quot; value=&quot;NLgZ6AKp&quot;/&gt;
     &lt;parameter name=&quot;status&quot; value=&quot;true&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;application.todotest&quot;/&gt;
@@ -202,20 +215,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'listingTasks')
 data.setCell(0, 2, 'application.todotest')
-data.setCell(0, 3, 2806);
+data.setCell(0, 3, 2934);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getaSingleTask')
+data.setCell(1, 1, 'createTask')
 data.setCell(1, 2, 'application.todotest')
-data.setCell(1, 3, 22);
+data.setCell(1, 3, 89);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getaSingleTask')
+data.setCell(2, 2, 'application.todotest')
+data.setCell(2, 3, 20);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -230,14 +247,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">application.todotest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">createTask</span>
-                <br/>
                 <span class="ignored-method-name">markTaskCompleted</span>
                 <br/>
                 <span class="ignored-method-name">deleteExistingTask</span>
@@ -262,8 +277,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getaSingleTask(28Ct9UGv)</span>
-                <span class="method-start">2816 ms</span>
+                <span class="method-name">getaSingleTask(NLgZ6AKp)</span>
+                <span class="method-start">2945 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createTask(Eat Veg food, true)</span>
+                <span class="method-start">2968 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
