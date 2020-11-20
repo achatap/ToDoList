@@ -70,9 +70,8 @@ public class todotest {
 	@Parameters({"taskName", "status"})
 	@Test(priority = 3, enabled = true)
 	public void createTask(String taskName, String status) {
-
+		
 		jo =new JSONObject();
-
 		jo.put("task", taskName);
 		jo.put("completed", status);
 
@@ -101,7 +100,7 @@ public class todotest {
 	}
 
 	@Parameters({"taskID", "taskName", "status"})
-	@Test(priority = 4, dependsOnMethods = "listingTasks", enabled = false)
+	@Test(priority = 4, dependsOnMethods = "listingTasks", enabled = true)
 	public void modifyTask(String taskID, String taskName, String status) {
 
 		jo =new JSONObject();	
@@ -129,7 +128,7 @@ public class todotest {
 	}		
 
 	@Parameters("taskID")
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void markTaskCompleted(String taskID) {
 
 		for (String tid : taskId) {
@@ -147,7 +146,7 @@ public class todotest {
 	}
 
 	@Parameters("taskID")
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void markTaskInComplete(String taskID) {
 
 			given()
@@ -162,7 +161,7 @@ public class todotest {
 		}
 
 	@Parameters("taskID")
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	public void deleteExistingTask(String taskID) {
 
 			given()

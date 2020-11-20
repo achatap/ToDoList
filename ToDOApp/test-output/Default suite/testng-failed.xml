@@ -6,7 +6,10 @@
       <class name="application.todotest">
         <methods>
           <include name="getaSingleTask"/>
+          <include name="createTask"/>
           <include name="listingTasks"/>
+          <include name="modifyTask"/>
+          <include name="markTaskInComplete"/>
         </methods>
       </class> <!-- application.todotest -->
     </classes>

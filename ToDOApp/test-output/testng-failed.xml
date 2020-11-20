@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="taskName" value="Eat non-Veg food"/>
+    <parameter name="taskID" value="cHBu8GO2"/>
+    <parameter name="status" value="true"/>
     <classes>
       <class name="application.todotest">
         <methods>
-          <include name="getaSingleTask"/>
           <include name="listingTasks"/>
+          <include name="markTaskCompleted" invocation-numbers="0"/>
+          <include name="deleteExistingTask" invocation-numbers="0"/>
+          <include name="modifyTask" invocation-numbers="0"/>
+          <include name="markTaskInComplete" invocation-numbers="0"/>
         </methods>
       </class> <!-- application.todotest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

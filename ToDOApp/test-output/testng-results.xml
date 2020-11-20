@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-18T16:00:53 IST" name="Suite" finished-at="2020-11-18T16:00:56 IST" duration-ms="3134">
+  <suite started-at="2020-11-18T16:14:18 IST" name="Suite" finished-at="2020-11-18T16:14:21 IST" duration-ms="3294">
     <groups>
     </groups>
-    <test started-at="2020-11-18T16:00:53 IST" name="Test" finished-at="2020-11-18T16:00:56 IST" duration-ms="3134">
+    <test started-at="2020-11-18T16:14:18 IST" name="Test" finished-at="2020-11-18T16:14:21 IST" duration-ms="3294">
       <class name="application.todotest">
-        <test-method signature="listingTasks()[pri:1, instance:application.todotest@28237492]" started-at="2020-11-18T16:00:53 IST" name="listingTasks" finished-at="2020-11-18T16:00:56 IST" duration-ms="2934" status="PASS">
+        <test-method signature="listingTasks()[pri:1, instance:application.todotest@28237492]" started-at="2020-11-18T16:14:18 IST" name="listingTasks" finished-at="2020-11-18T16:14:21 IST" duration-ms="2835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listingTasks -->
-        <test-method signature="getaSingleTask(java.lang.String)[pri:2, instance:application.todotest@28237492]" started-at="2020-11-18T16:00:56 IST" name="getaSingleTask" finished-at="2020-11-18T16:00:56 IST" depends-on-methods="application.todotest.listingTasks" duration-ms="20" status="PASS">
+        <test-method signature="getaSingleTask(java.lang.String)[pri:2, instance:application.todotest@28237492]" started-at="2020-11-18T16:14:21 IST" name="getaSingleTask" finished-at="2020-11-18T16:14:21 IST" depends-on-methods="application.todotest.listingTasks" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[NLgZ6AKp]]>
+                <![CDATA[2hcYzPKf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getaSingleTask -->
-        <test-method signature="createTask(java.lang.String, java.lang.String)[pri:3, instance:application.todotest@28237492]" started-at="2020-11-18T16:00:56 IST" name="createTask" finished-at="2020-11-18T16:00:56 IST" duration-ms="89" status="PASS">
+        <test-method signature="createTask(java.lang.String, java.lang.String)[pri:3, instance:application.todotest@28237492]" started-at="2020-11-18T16:14:21 IST" name="createTask" finished-at="2020-11-18T16:14:21 IST" duration-ms="72" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Eat Veg food]]>
+                <![CDATA[Eat non-Veg food]]>
               </value>
             </param>
             <param index="1">
@@ -38,6 +38,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTask -->
+        <test-method signature="modifyTask(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:application.todotest@28237492]" started-at="2020-11-18T16:14:21 IST" name="modifyTask" finished-at="2020-11-18T16:14:21 IST" depends-on-methods="application.todotest.listingTasks" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2hcYzPKf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Eat non-Veg food]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyTask -->
+        <test-method signature="markTaskCompleted(java.lang.String)[pri:5, instance:application.todotest@28237492]" started-at="2020-11-18T16:14:21 IST" name="markTaskCompleted" finished-at="2020-11-18T16:14:21 IST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2hcYzPKf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markTaskCompleted -->
+        <test-method signature="markTaskInComplete(java.lang.String)[pri:6, instance:application.todotest@28237492]" started-at="2020-11-18T16:14:21 IST" name="markTaskInComplete" finished-at="2020-11-18T16:14:21 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2hcYzPKf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markTaskInComplete -->
+        <test-method signature="deleteExistingTask(java.lang.String)[pri:7, instance:application.todotest@28237492]" started-at="2020-11-18T16:14:21 IST" name="deleteExistingTask" finished-at="2020-11-18T16:14:21 IST" duration-ms="36" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2hcYzPKf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteExistingTask -->
       </class> <!-- application.todotest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

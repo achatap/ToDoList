@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  <parameter name="taskID" value="cHBu8GO2" />
-  <parameter name="taskName" value="Eat Veg food" />
+  <parameter name="taskID" value="2hcYzPKf" />
+  <parameter name="taskName" value="Eat non-Veg food" />
   <parameter name="status" value="true" />
     <classes>
       <class name="application.todotest"/>
