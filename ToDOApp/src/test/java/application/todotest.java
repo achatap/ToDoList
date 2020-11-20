@@ -72,6 +72,7 @@ public class todotest {
 	public void createTask(String taskName, String status) {
 		
 		jo =new JSONObject();
+		
 		jo.put("task", taskName);
 		jo.put("completed", status);
 
